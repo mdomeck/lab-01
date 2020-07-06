@@ -1,0 +1,48 @@
+div {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  /* height: 100px; */
+  /* line-height: 100px; */
+  background-color: rgb(190, 187, 187);
+}
+
+#a{
+  height: 75px;
+  line-height: 40px;
+}
+
+#b{
+  height: 150px;
+  line-height: 120px;
+}
+
+#c{
+  height: 125px;
+  line-height: 100px;
+}
+
+#d{
+  height: 125px;
+  line-height: 100px;
+}
+
+#first, #second{
+  display: flex;
+  justify-content: left;
+}
+
+#e, #f, #g, #h{
+  height: 250px;
+  width: 240px;
+  line-height: 220px;
+  
+}
+
+#i{
+  height: 80px;
+  line-height: 75px;
+}
+
+
+
