@@ -46,7 +46,6 @@ body section {
   width: 240px;
   line-height: 250px;
   background-color: blue;
-  
   }
 
 #f{
@@ -77,8 +76,7 @@ body section {
   width: 480px;
   line-height: 80px;
   background-color: grey;
- 
-}
+ }
 
 
 @media only screen and (min-width:768px) and (max-width: 1024px){
@@ -94,15 +92,10 @@ body section {
   }
   
   body{
-   grid-template-columns: 20% 20% 20% 20% 20%;
-   grid-template-rows: 25% 25% 25% 25%;
-   /* grid-template-areas: 
-   "header header header header"
-   "sidebar article article"
-   "p p p p"
-   "footer footer footer";
-    grid-auto-flow: row; */
- }   
+   grid-template-columns: 200px 190px 190px 190px 190px;
+   grid-template-rows: 100px 200px 250px 150px;
+   }   
+
   #a{
     height: 100px;
     width: 960px;
@@ -115,10 +108,18 @@ body section {
     width: 200px;
     line-height: 600px;
     background-color: orange;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
     }
-    
+
   #rectangles{
     grid-template-columns: 380px 380px; 
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   #c{
@@ -137,7 +138,10 @@ body section {
 
   #boxes {
     grid-template-columns: 190px 190px 190px 190px;
-    
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
     
   }
 
@@ -177,13 +181,123 @@ body section {
     width: 760px;
     line-height: 150px;
     background-color: grey;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
    }
-
 }
 
-/* @media (min-width: 1025px) and (max-width: 1280px){
+@media (min-width: 1025px) and (max-width: 1280px){
   
   div {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  body, section {
+    display: grid;
+  }
+  
+  body{
+   grid-template-columns: 200px 190px 190px 190px 190px;
+   grid-template-rows: 100px 200px 250px 150px;
+   }   
+
+  #a{
+    height: 100px;
+    width: 960px;
+    line-height: 100px;
+    background-color: red;
+    }
+  
+  #b{
+    height: 600px;
+    width: 200px;
+    line-height: 600px;
+    background-color: orange;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    }
+
+  #rectangles{
+    grid-template-columns: 380px 380px; 
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  #c{
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    background-color: yellow; 
+    }
+  
+  #d{
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    background-color: green;
+    }
+
+  #boxes {
+    grid-template-columns: 190px 190px 190px 190px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    
+  }
+
+  #e{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: blue;
+    
+  }
+  
+  #f{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: blueviolet;
+    
+  }
+  
+  #g{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: cornsilk;
+    
+  }
+  
+  #h{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: black;
+  }
+  
+  #i{
+    height: 150px;
+    width: 760px;
+    line-height: 150px;
+    background-color: grey;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+   }
+}
+
+  /* div {
     border: 1px solid black;
     padding: 10px;
     text-align: center;
@@ -194,22 +308,21 @@ body section {
     width: 960px;
     line-height: 100px;
     background-color: red;
-  }
+    }
   
   #b{
     height: 600px;
     width: 200px;
     line-height: 600px;
     background-color: orange;
-      }
+    }
 
   #c{
     height: 200px;
     width: 380px;
     line-height: 200px;
     background-color: yellow;
-    
-  }
+    }
   
   #d{
     height: 200px;
@@ -257,6 +370,6 @@ body section {
     line-height: 150px;
     background-color: grey;
     
-  } */
+  }
 
 }  */
