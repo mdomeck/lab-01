@@ -46,7 +46,7 @@ body section {
   width: 240px;
   line-height: 250px;
   background-color: blue;
-  align-self: start;
+  
   }
 
 #f{
@@ -61,7 +61,6 @@ body section {
   width: 240px;
   line-height: 250px;
   background-color: cornsilk;
-    
 }
 
 #h{
@@ -70,8 +69,6 @@ body section {
   line-height: 250px;
   background-color: black;
   color: white;
-  align-self: end;
-  
  }
 
 
@@ -82,8 +79,109 @@ body section {
   background-color: grey;
  
 }
-/* 
-@media only screen and (min-width:768px){
+
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+  
+  div {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  body, section {
+    display: grid;
+  }
+  
+  body{
+   grid-template-columns: 20% 20% 20% 20% 20%;
+   grid-template-rows: 25% 25% 25% 25%;
+   /* grid-template-areas: 
+   "header header header header"
+   "sidebar article article"
+   "p p p p"
+   "footer footer footer";
+    grid-auto-flow: row; */
+ }   
+  #a{
+    height: 100px;
+    width: 960px;
+    line-height: 100px;
+    background-color: red;
+    }
+  
+  #b{
+    height: 600px;
+    width: 200px;
+    line-height: 600px;
+    background-color: orange;
+    }
+    
+  #rectangles{
+    grid-template-columns: 380px 380px; 
+  }
+
+  #c{
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    background-color: yellow; 
+    }
+  
+  #d{
+    height: 200px;
+    width: 380px;
+    line-height: 200px;
+    background-color: green;
+    }
+
+  #boxes {
+    grid-template-columns: 190px 190px 190px 190px;
+    
+    
+  }
+
+  #e{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: blue;
+    
+  }
+  
+  #f{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: blueviolet;
+    
+  }
+  
+  #g{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: cornsilk;
+    
+  }
+  
+  #h{
+    height: 250px;
+    width: 190px;
+    line-height: 250px;
+    background-color: black;
+  }
+  
+  #i{
+    height: 150px;
+    width: 760px;
+    line-height: 150px;
+    background-color: grey;
+   }
+
+}
+
+/* @media (min-width: 1025px) and (max-width: 1280px){
   
   div {
     border: 1px solid black;
@@ -103,16 +201,14 @@ body section {
     width: 200px;
     line-height: 600px;
     background-color: orange;
-    float: left;
-  }
+      }
 
   #c{
     height: 200px;
     width: 380px;
     line-height: 200px;
     background-color: yellow;
-    float: left;
-    clear: none;
+    
   }
   
   #d{
@@ -120,8 +216,7 @@ body section {
     width: 380px;
     line-height: 200px;
     background-color: green;
-    float: left;
-    clear: right;
+   
   }
 
   #e{
@@ -129,8 +224,7 @@ body section {
     width: 190px;
     line-height: 250px;
     background-color: blue;
-    float: left;
-    clear: none;
+    
   }
   
   #f{
@@ -138,8 +232,7 @@ body section {
     width: 190px;
     line-height: 250px;
     background-color: blueviolet;
-    float: left;
-    clear: none;
+    
   }
   
   #g{
@@ -147,8 +240,7 @@ body section {
     width: 190px;
     line-height: 250px;
     background-color: cornsilk;
-    float: left;
-    clear: none;
+    
   }
   
   #h{
@@ -156,7 +248,7 @@ body section {
     width: 190px;
     line-height: 250px;
     background-color: black;
-    float: left;
+   
   }
   
   #i{
@@ -164,8 +256,7 @@ body section {
     width: 760px;
     line-height: 150px;
     background-color: grey;
-    float: left;
-  }
+    
+  } */
 
-} */
-
+}  */
