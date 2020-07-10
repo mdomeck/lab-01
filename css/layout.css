@@ -78,7 +78,7 @@ body section {
   background-color: grey;
  }
 
-
+/* ================TABLET VERSION ============================*/
 @media only screen and (min-width:768px) and (max-width: 1024px){
   
   div {
@@ -98,7 +98,7 @@ body section {
 
   #a{
     height: 100px;
-    width: 960px;
+    /* width: 960px; */
     line-height: 100px;
     background-color: red;
     }
@@ -188,6 +188,7 @@ body section {
    }
 }
 
+/* ===================DESKTOP VERSION=========================== */
 @media (min-width: 1025px) and (max-width: 1280px){
   
   div {
@@ -200,9 +201,11 @@ body section {
     display: grid;
   }
   
+  /*colums=960 total  rows=700 */
   body{
-   grid-template-columns: 200px 190px 190px 190px 190px;
-   grid-template-rows: 100px 200px 250px 150px;
+    display: grid;
+   grid-template-columns: 190px repeat(4 1fr); 
+   grid-template-rows: fr fr fr fr; 
    }   
 
   #a{
@@ -210,6 +213,8 @@ body section {
     width: 960px;
     line-height: 100px;
     background-color: red;
+    grid-column-start: span 5;
+    /* grid-column-end: 6; */
     }
   
   #b{
@@ -218,7 +223,7 @@ body section {
     line-height: 600px;
     background-color: orange;
     grid-column-start: 1;
-    grid-column-end: 2;
+    /* grid-column-end: 3; */
     grid-row-start: 2;
     grid-row-end: 5;
     }
